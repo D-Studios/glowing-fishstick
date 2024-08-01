@@ -112,8 +112,8 @@ export default function DemoAppium() {
     }
 
     return (
-    <View style = {{justifyContent: 'center', alignItems: 'center', flex : 1}}>
-    <Button mode = "contained" onPress={toggleTheme}>
+    <View style = {{justifyContent: 'center', alignItems: 'center', flex : 1}} accessibilityLabel = "app-root">
+    <Button mode = "contained" onPress={toggleTheme} accessibilityLabel = "theButton">
         Current theme: {theme}
     </Button>
     </View>
